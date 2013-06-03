@@ -25,7 +25,17 @@
 		}
 
 		public function addCORSHeader($context) {
-			Frontend::Page()->addHeaderToPage("Access-Control-Allow-Origin:", "*");
+
+			if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+				header('Access-Control-Allow-Origin: *');
+				header('Access-Control-Allow-Methods: POST, GET, PUT, DELETE');
+				header('Access-Control-Allow-Headers: X-Requested-With, Content-Type');
+				exit;
+			}
+			else {
+				//Frontend::Page()->addHeaderToPage('Access-Control-Allow-Headers:', 'X-Requested-With');
+				Frontend::Page()->addHeaderToPage("Access-Control-Allow-Origin", '*');
+			}
 		}
 
 	}
