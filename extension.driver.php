@@ -33,6 +33,7 @@
 				exit;
 			}
 			else {
+				// Leaving this out for now.
 				//Frontend::Page()->addHeaderToPage('Access-Control-Allow-Headers:', 'X-Requested-With');
 				Frontend::Page()->addHeaderToPage("Access-Control-Allow-Origin", '*');
 			}
