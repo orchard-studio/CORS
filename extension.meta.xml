@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="cors" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>CORS</name>
+	<description>Adds CORS headers to all front end pages.</description>
+	<repo type="github">
+
+	</repo>
+	<url type="discuss"></url>
+	<types>
+	</types>
+	<authors>
+		<author>
+			<name github="rc1" symphony="rc1">Ross Cairns</name>
+			<website>http://www.theworkers.net/</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.0.1" date="2013-06-03" min="2.2.x" />
+	</releases>
+</extension>
