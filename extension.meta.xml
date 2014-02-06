@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="CORS" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+<extension id="cors" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>CORS</name>
-	<description>Adds CORS headers to all front end pages.</description>
+	<description>Adds CORS headers `to all front end pages.</description>
 	<repo type="github">
-
+        https://github.com/rc1/CORS
 	</repo>
-	<url type="discuss"></url>
-	<types>
-	</types>
 	<authors>
 		<author>
 			<name github="rc1" symphony="rc1">Ross Cairns</name>
@@ -15,6 +12,7 @@
 		</author>
 	</authors>
 	<releases>
-		<release version="0.0.1" date="2013-06-03" min="2.x.x" />
+		<release version="0.0.2" date="2014-02-01" min="2.2" max="2.3.x" />
+		<release version="0.0.1" date="2013-06-03" min="2.2.x" />
 	</releases>
 </extension>
